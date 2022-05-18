@@ -1,1 +1,1 @@
-#The Hateful Society
+# [The Hateful Society](https://thehatefulsociety.com)
