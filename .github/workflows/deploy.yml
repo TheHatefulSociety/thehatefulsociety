@@ -15,7 +15,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Install PNPM
-      - uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v2.0.1
         with:
          version: 7.0.0
       - name: Install Node.JS ${{ matrix.node-version }}
@@ -23,9 +23,12 @@ jobs:
         with:
          node-version: ${{ matrix.node-version }}
          cache: 'pnpm'
-      - run: pnpm install
-      - run: pnpm run build
-      - run: pnpm run export
+      - name: Install dependencies
+        run: pnpm install
+      - name: Build
+        run: pnpm run build
+      - name: Export
+        run: pnpm run export
         env:
           CI: true
           DEPLOY_TARGET: gh-pages
