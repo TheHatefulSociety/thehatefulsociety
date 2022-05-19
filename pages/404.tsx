@@ -13,7 +13,7 @@ const Error404: NextPage = () => {
 
       <main className="flex flex-col items-center text-center justify-center flex-grow min-h-screen p-8 space-y-14">
         <p className="text-3xl">
-          Can't find something that hasn't been built yet.
+          Can't find something that hasn&apos;t been built yet.
         </p>
 
         <h2 className="text-2xl hover:underline">
