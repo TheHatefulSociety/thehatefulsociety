@@ -2,8 +2,15 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
+
 
 const Home: NextPage = () => {
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -26,6 +33,16 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           Not coming soon.
         </p>
+
+        <select value={theme} onChange={e => setTheme(e.target.value)} data-test-id='theme-selector'>
+        <option value="system">System</option>
+        {mounted && (
+          <>
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+          </>
+        )}
+      </select>
       </main>
     </div>
   )

@@ -14,3 +14,17 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --fg: rgb(0, 0, 0);
+  --bg: rgb(255, 255, 255);
+}
+
+[data-theme='dark'] {
+  --fg: rgb(255, 255, 255);
+  --bg: rgb(0, 0, 0);
+}
+
+select {
+  font-size: 24px;
+}
