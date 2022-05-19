@@ -1,23 +1,22 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
 
 const Store: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="px-0 py-8">
       <Head>
         <title>The Hateful Society</title>
         <meta name="description" content="The Hateful Society" />
         <link rel="icon" href="/ths.svg" />
       </Head>
 
-      <main className={styles.main}>
-        <p className={styles.description}>
+      <main className="flex flex-col items-center text-center justify-center flex-grow min-h-screen p-8 space-y-14">
+        <p className="text-3xl">
           Not coming soon either.
         </p>
 
-        <h2 className={styles.backbutton}>
+        <h2 className="text-2xl hover:underline">
           <Link href="/">
            <a>Back</a>
           </Link>

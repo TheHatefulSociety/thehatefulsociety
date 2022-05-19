@@ -1,10 +1,9 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
+import '../styles.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: any ) {
   return (
-    <ThemeProvider>
+    <ThemeProvider forcedTheme={Component.theme || undefined} attribute="class">
       <Component {...pageProps} />
     </ThemeProvider>
   )

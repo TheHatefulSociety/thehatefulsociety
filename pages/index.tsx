@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
@@ -12,29 +11,29 @@ const Home: NextPage = () => {
   useEffect(() => setMounted(true), [])
 
   return (
-    <div className={styles.container}>
+    <div className="px-0 py-8">
       <Head>
         <title>The Hateful Society</title>
         <meta name="description" content="The Hateful Society" />
         <link rel="icon" href="/ths.svg" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main className="flex flex-col items-center text-center justify-center flex-grow min-h-screen p-8 space-y-14">
+        <h1 className="font-sans hover:underline text-6xl">
           <p>The Hateful Society</p>
         </h1>
 
-        <h2 className={styles.secondary}>
+        <h2 className="text-2xl hover:underline">
           <Link href="/store">
            <a>Store</a>
           </Link>
         </h2>
 
-        <p className={styles.description}>
+        <p className="text-3xl">
           Not coming soon.
         </p>
 
-        <select value={theme} onChange={e => setTheme(e.target.value)} data-test-id='theme-selector'>
+        <select className="text-3xl" value={theme} onChange={e => setTheme(e.target.value)} data-test-id='theme-selector'>
         <option value="system">System</option>
         {mounted && (
           <>
