@@ -1,49 +1,61 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
 
   return (
-    <div className="px-0 py-8">
-      <Head>
-        <title>The Hateful Society</title>
-        <meta name="description" content="The Hateful Society" />
-        <link rel="icon" href="/ths.svg" />
-      </Head>
+    <div className="px-0 py-8 mix-blend-difference dark:mix-blend-difference">
+      <main className="flex flex-col items-center text-center justify-center flex-grow min-h-screen p-8 space-y-10">
+        <div className="flex flex-col space-y-2">
+          <h1 className="text-white dark:text-white hover:overline text-6xl decoration-8 underline-offset-8">
+            The Hateful Society
+          </h1>
+          <div className="flex flex-row items-center text-center justify-center space-x-10">
+            <h2 className="text-white dark:text-white text-2xl hover:underline decoration-3 underline-offset-8">
+              <Link href="/store">Store</Link>
+            </h2>
+            <h2 className="text-white dark:text-white text-2xl hover:underline decoration-3 underline-offset-8">
+              <a
+                href="https://instagram.com/thehatefulsociety"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </h2>
+            <h2 className="text-white dark:text-white text-2xl hover:underline decoration-3 underline-offset-8">
+              <a
+                href="https://twitter.com/hatefulsociety"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </h2>
+            <h2 className="text-white dark:text-white text-2xl hover:underline decoration-3 underline-offset-8">
+              <a
+                href="https://github.com/thehatefulsociety"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </h2>
+          </div>
+        </div>
 
-      <main className="flex flex-col items-center text-center justify-center flex-grow min-h-screen p-8 space-y-14">
-        <h1 className="font-sans hover:underline text-6xl">
-          <p>The Hateful Society</p>
-        </h1>
+        <p className="text-white dark:text-white text-3xl">Not coming soon.</p>
 
-        <h2 className="text-2xl hover:underline">
-          <Link href="/store">
-            <a>Store</a>
-          </Link>
-        </h2>
-
-        <p className="text-3xl">Not coming soon.</p>
-
-        <select
-          className="text-3xl"
-          value={theme}
-          onChange={e => setTheme(e.target.value)}
-          data-test-id="theme-selector"
+        <button
+          className="text-white dark:text-white text-xl"
+          onClick={() => {
+            setTheme(theme === "light" ? "dark" : "light");
+          }}
         >
-          <option value="system">System</option>
-          {mounted && (
-            <>
-              <option value="dark">Dark</option>
-              <option value="light">Light</option>
-            </>
-          )}
-        </select>
+          Change theme
+        </button>
       </main>
     </div>
   );

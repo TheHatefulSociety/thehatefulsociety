@@ -1,23 +1,16 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Link from "next/link";
 
 const Store: NextPage = () => {
   return (
-    <div className="px-0 py-8">
-      <Head>
-        <title>The Hateful Society</title>
-        <meta name="description" content="The Hateful Society" />
-        <link rel="icon" href="/ths.svg" />
-      </Head>
-
+    <div className="px-0 py-8 mix-blend-difference dark:mix-blend-difference">
       <main className="flex flex-col items-center text-center justify-center flex-grow min-h-screen p-8 space-y-14">
-        <p className="text-3xl">Not coming soon either.</p>
+        <p className="text-white dark:text-white text-3xl">
+          Not coming soon either.
+        </p>
 
-        <h2 className="text-2xl hover:underline">
-          <Link href="/">
-            <a>Back</a>
-          </Link>
+        <h2 className="text-white dark:text-white text-2xl hover:underline">
+          <Link href="/">Back</Link>
         </h2>
       </main>
     </div>
