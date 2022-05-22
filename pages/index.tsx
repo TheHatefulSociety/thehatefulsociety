@@ -12,7 +12,7 @@ const Home: NextPage = () => {
           <h1 className="text-white dark:text-white hover:overline text-6xl decoration-8 underline-offset-8">
             The Hateful Society
           </h1>
-          <div className="flex flex-row items-center text-center justify-center space-x-10">
+          <div className="flex flex-wrap flex-row items-center text-center justify-center space-x-5">
             <h2 className="text-white dark:text-white text-2xl hover:underline decoration-3 underline-offset-8">
               <Link href="/store">Store</Link>
             </h2>
