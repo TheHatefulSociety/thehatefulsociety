@@ -1,6 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Link from 'next/link'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Link from "next/link";
 
 const Error404: NextPage = () => {
   return (
@@ -18,12 +18,12 @@ const Error404: NextPage = () => {
 
         <h2 className="text-2xl hover:underline">
           <Link href="/">
-           <a>The Hateful Society</a>
+            <a>The Hateful Society</a>
           </Link>
         </h2>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Error404
+export default Error404;

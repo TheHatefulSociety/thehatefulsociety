@@ -1,14 +1,13 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Link from 'next/link'
-import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
-
+import type { NextPage } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   return (
     <div className="px-0 py-8">
@@ -25,26 +24,29 @@ const Home: NextPage = () => {
 
         <h2 className="text-2xl hover:underline">
           <Link href="/store">
-           <a>Store</a>
+            <a>Store</a>
           </Link>
         </h2>
 
-        <p className="text-3xl">
-          Not coming soon.
-        </p>
+        <p className="text-3xl">Not coming soon.</p>
 
-        <select className="text-3xl" value={theme} onChange={e => setTheme(e.target.value)} data-test-id='theme-selector'>
-        <option value="system">System</option>
-        {mounted && (
-          <>
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-          </>
-        )}
-      </select>
+        <select
+          className="text-3xl"
+          value={theme}
+          onChange={e => setTheme(e.target.value)}
+          data-test-id="theme-selector"
+        >
+          <option value="system">System</option>
+          {mounted && (
+            <>
+              <option value="dark">Dark</option>
+              <option value="light">Light</option>
+            </>
+          )}
+        </select>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,6 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Link from 'next/link'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Link from "next/link";
 
 const Store: NextPage = () => {
   return (
@@ -12,18 +12,16 @@ const Store: NextPage = () => {
       </Head>
 
       <main className="flex flex-col items-center text-center justify-center flex-grow min-h-screen p-8 space-y-14">
-        <p className="text-3xl">
-          Not coming soon either.
-        </p>
+        <p className="text-3xl">Not coming soon either.</p>
 
         <h2 className="text-2xl hover:underline">
           <Link href="/">
-           <a>Back</a>
+            <a>Back</a>
           </Link>
         </h2>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Store
+export default Store;
