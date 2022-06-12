@@ -1,6 +1,6 @@
 # Pull request template
 
-* Please make sure you read and fill this template out entirely
+- Please make sure you read and fill this template out entirely
 
 ## Description
 
