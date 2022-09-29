@@ -14,6 +14,9 @@ const Wrapper = styled.div`
   text-align: center;
   gap: 7rem;
   padding: 3rem;
+  @media (max-width: 412px) {
+    gap: 3rem;
+  }
 `;
 
 const Text = styled.p`
