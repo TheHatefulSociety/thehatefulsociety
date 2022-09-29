@@ -23,13 +23,22 @@ const Text = styled.p`
   color: ${({ theme }) => theme.text.textColor};
   font-family: Earwig Factory;
   font-size: 5rem;
+
   :last-of-type {
     font-size: 10rem;
   }
+
   @media (max-width: 977px) {
     font-size: 3rem;
     :last-of-type {
       font-size: 6rem;
+    }
+  }
+
+  @media (max-width: 412px) {
+    font-size: 2rem;
+    :last-of-type {
+      font-size: 5rem;
     }
   }
 `;
@@ -50,8 +59,13 @@ const FooterItem = styled.a`
   font-family: Earwig Factory;
   font-size: 3rem;
   text-decoration: none;
+
   @media (max-width: 977px) {
     font-size: 2rem;
+  }
+
+  @media (max-width: 412px) {
+    font-size: 1.8rem;
   }
 `;
 
