@@ -1,6 +1,5 @@
 <p align="center">
-  <img width="60%" src="public/images/logo/ths-white.svg#gh-dark-mode-only" />
-  <img width="60%" src="public/images/logo/ths-black.svg#gh-light-mode-only" />
+  <img width="40%" src="public/images/favicon.webp" />
 </p>
 
 # The Hateful Society
