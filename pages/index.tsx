@@ -12,20 +12,17 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 7rem;
-  padding: 3rem;
-  @media (max-width: 412px) {
-    gap: 3rem;
-  }
+  gap: 4rem;
+  padding: 1.5rem;
 `;
 
 const Text = styled.p`
   color: ${({ theme }) => theme.text.textColor};
   font-family: Earwig Factory;
-  font-size: 5rem;
+  font-size: 4rem;
 
   :last-of-type {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 
   @media (max-width: 977px) {
@@ -36,9 +33,9 @@ const Text = styled.p`
   }
 
   @media (max-width: 412px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     :last-of-type {
-      font-size: 5rem;
+      font-size: 3rem;
     }
   }
 `;
@@ -50,7 +47,8 @@ const Footer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 5rem;
+  column-gap: 5rem;
+  row-gap: 1.5rem;
   padding: 0 1rem;
 `;
 
@@ -65,7 +63,7 @@ const FooterItem = styled.a`
   }
 
   @media (max-width: 412px) {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 `;
 
