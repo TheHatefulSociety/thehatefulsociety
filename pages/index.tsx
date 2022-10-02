@@ -85,6 +85,30 @@ const ThemeButton = styled.button`
   }
 `;
 
+const Heading = styled.h1`
+  color: ${({ theme }) => theme.text.textColor};
+  font-family: Earwig Factory;
+  font-size: 4rem;
+
+  :last-of-type {
+    font-size: 8rem;
+  }
+
+  @media (max-width: 977px) {
+    font-size: 3rem;
+    :last-of-type {
+      font-size: 6rem;
+    }
+  }
+
+  @media (max-width: 412px) {
+    font-size: 1.5rem;
+    :last-of-type {
+      font-size: 3rem;
+    }
+  }
+`;
+
 type ThemeTypes = "dark" | "light" | "system";
 
 const Index: NextPage = () => {
@@ -116,7 +140,7 @@ const Index: NextPage = () => {
         >
           💡
         </ThemeButton>
-        <Text>The Hateful Society</Text>
+        <Heading>The Hateful Society</Heading>
         <Text>Not coming soon.</Text>
         <Footer>
           <Link href={"/instagram"} passHref>
