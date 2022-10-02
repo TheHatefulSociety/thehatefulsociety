@@ -90,22 +90,12 @@ const Heading = styled.h1`
   font-family: Earwig Factory;
   font-size: 4rem;
 
-  :last-of-type {
-    font-size: 8rem;
-  }
-
   @media (max-width: 977px) {
     font-size: 3rem;
-    :last-of-type {
-      font-size: 6rem;
-    }
   }
 
   @media (max-width: 412px) {
     font-size: 1.5rem;
-    :last-of-type {
-      font-size: 3rem;
-    }
   }
 `;
 
