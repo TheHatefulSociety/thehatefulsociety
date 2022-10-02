@@ -47,7 +47,7 @@ const Page = () => (
       <meta property="og:title" content="The Hateful Society" key="title" />
       <meta
         name="keywords"
-        content="thehatefulsociety, the, hateful, society, hate, hatehatehate"
+        content="thehatefulsociety, the, hateful, society, hate, hatehatehate, hypewear, brand, clothing, designer"
       />
       <meta name="description" content="hate hate hate" />
       <meta name="og:description" content="hate hate hate" />
