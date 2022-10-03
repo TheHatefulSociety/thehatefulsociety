@@ -19,24 +19,14 @@ const Wrapper = styled.div`
 const Text = styled.p`
   color: ${({ theme }) => theme.text.textColor};
   font-family: Earwig Factory;
-  font-size: 4rem;
-
-  :last-of-type {
-    font-size: 8rem;
-  }
+  font-size: 8rem;
 
   @media (max-width: 977px) {
-    font-size: 3rem;
-    :last-of-type {
-      font-size: 6rem;
-    }
+    font-size: 6rem;
   }
 
   @media (max-width: 412px) {
-    font-size: 1.5rem;
-    :last-of-type {
-      font-size: 3rem;
-    }
+    font-size: 3rem;
   }
 `;
 
@@ -88,14 +78,14 @@ const ThemeButton = styled.button`
 const Heading = styled.h1`
   color: ${({ theme }) => theme.text.textColor};
   font-family: Earwig Factory;
-  font-size: 4rem;
+  font-size: 5rem;
 
   @media (max-width: 977px) {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   @media (max-width: 412px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
